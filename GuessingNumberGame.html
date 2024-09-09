@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GuessingNumberGame.css">
+</head>
+<body>
+    <main class="mainSec" id="mainSec">
+        <div class="heading" id="heading">
+            <h1>Welcome to Guessing Number Game!</h1>
+        </div>
+        <div class="text" id="text">
+            <p><b>Please enter a number below ⬇️</b></p>
+        </div>
+        <div class="inputDiv" id="inputDiv">
+            <input type="text" class="inputBox" id="inputBox" disabled>
+        </div>
+        <div class="message" id="message"></div>
+        <p class="prevGuess text-1" id="prevGuess">Previous Guess: <span class="userGuess" id="userGuess"></span></p>
+        <p class="chances text-1">Guesses left: <span class="number" id="number">10</span></p>
+        <div class="btnDiv" id="btnDiv">
+            <button id="btnOne" onclick="playGame()">Play it!</button>
+            <button id="btnTwo" disabled onclick="guessNumber()">Guess it!</button>
+            <button id="btnThree" disabled onclick="reset()">Reset</button>
+        </div>
+        <script src="GuessingNumberGame.js"></script>
+        
+    </main>
+</body>
+</html>

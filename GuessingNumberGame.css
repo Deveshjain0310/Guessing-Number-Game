@@ -1,0 +1,69 @@
+body{
+    background-color: #383734;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSec{
+    height: 600px;
+    width: 630px;
+    background-color: #ffc505;
+}
+
+.heading{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputDiv{
+    height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox{
+    height: 30px;
+    border-radius: 7px;
+}
+
+.message{
+    font-size: 25px;
+    font-weight: bold;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-1{
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnDiv{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
