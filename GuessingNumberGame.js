@@ -46,6 +46,16 @@ function guessNumber() {
         btnOne.disabled = true;
         btnTwo.disabled = true;
         btnThree.disabled = true;
+        const newGameBtn = document.createElement('button');
+        newGameBtn.innerHTML = `<p><b>Start new game</b></p>`
+        newGameBtn.style.marginLeft = "20px";
+        newGameBtn.style.marginTop = "20px";
+        gameSec.appendChild(newGameBtn);
+        newGameBtn.onclick = function() {
+            newGameBtn.remove();
+            newGame();
+            playGame();
+        };
     }
 
     if (numGuess === 11) {
