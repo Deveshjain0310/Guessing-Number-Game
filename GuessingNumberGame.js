@@ -13,7 +13,7 @@ let prevGuess = [];
 
 function playGame() {
     inputBox.disabled = false;
-    btnOne.disabled = true;
+    btnOne.style.visibility = "hidden";
     btnTwo.disabled = false;
     btnThree.disabled = false;
 }
@@ -49,10 +49,10 @@ function guessNumber() {
         const newGameBtn = document.createElement('button');
         newGameBtn.innerHTML = `<p><b>Start new game</b></p>`
         newGameBtn.style.marginLeft = "20px";
-        newGameBtn.style.marginTop = "20px";
+        newGameBtn.style.marginBottom = "10px";
         gameSec.appendChild(newGameBtn);
         newGameBtn.onclick = function() {
-            newGameBtn.remove();
+            newGameBtn.style.visibility = "hidden";
             newGame();
             playGame();
         };
@@ -70,7 +70,7 @@ function guessNumber() {
         newGameBtn.style.marginTop = "20px";
         gameSec.appendChild(newGameBtn);
         newGameBtn.onclick = function() {
-            newGameBtn.remove();
+            newGameBtn.style.visibility = "hidden";
             newGame();
             playGame();
         };

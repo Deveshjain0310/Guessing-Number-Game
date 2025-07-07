@@ -24,7 +24,7 @@ body{
 }
 
 .text{
-    height: 45px;
+    height: 75px;
     width: 100%;
     display: flex;
     justify-content: center;
